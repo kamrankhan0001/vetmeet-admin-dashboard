@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaUser, FaBox, FaShoppingCart, FaCalendarAlt, FaPlus, FaClipboardList } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { io } from 'socket.io-client';
+//import { io } from 'socket.io-client';
 
 
 
@@ -10,7 +10,7 @@ const DashboardHome = () => {
   const [stats, setStats] = useState({ users: 3, products: 50, orders: 10, appointments: 2 });
   const [loading, setLoading] = useState(true);
   const [recentOrders, setRecentOrders] = useState([]);
-  const socket = io('http://localhost:5000');
+  //const socket = io('http://localhost:5000');
   const navigate = useNavigate();
 
 
