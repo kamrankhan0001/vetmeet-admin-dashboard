@@ -1,4 +1,4 @@
-// vetnmeet-admin-frontend/src/components/AppointmentManagement.jsx
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaCalendarAlt, FaSpinner, FaCheckCircle, FaTimesCircle } from 'react-icons/fa';

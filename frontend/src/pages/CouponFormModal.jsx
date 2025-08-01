@@ -1,4 +1,4 @@
-// vetnmeet-admin-frontend/src/components/CouponFormModal.jsx
+
 import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
@@ -6,15 +6,15 @@ const CouponFormModal = ({ onClose, onSave, editingCoupon }) => {
   // State to hold the form data for a coupon
   const [couponData, setCouponData] = useState({
     code: '',
-    discountType: 'percentage', // Default discount type
+    discountType: 'percentage', 
     discountValue: '',
-    expiryDate: '', // YYYY-MM-DD format for HTML date input
+    expiryDate: '', 
     usageLimit: '',
-    appliesTo: 'all', // Default application scope
-    applicableItems: [], // Array of category IDs or product IDs
-    minOrderAmount: '', // Optional minimum order amount
+    appliesTo: 'all', 
+    applicableItems: [], 
+    minOrderAmount: '', 
   });
-  const [error, setError] = useState(''); // State for form validation errors
+  const [error, setError] = useState(''); 
 
   // useEffect to populate the form when an existing coupon is passed for editing
   useEffect(() => {
