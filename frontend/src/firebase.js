@@ -1,7 +1,7 @@
 // vetnmeet-admin-frontend/src/firebaseClient.js
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getDatabase } from 'firebase/database';
+//import { getDatabase } from 'firebase/database';
 
 // Your Firebase project configuration (from Firebase Console)
 const firebaseConfig = {
