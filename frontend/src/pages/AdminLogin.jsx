@@ -29,8 +29,7 @@ const AdminLogin = ({ setAdminLoggedIn }) => {
     localStorage.setItem('adminIdToken', token);
 
     // Sync user profile to your backend
-    await axios.post('https://vetmeet-admin-dashboard-api.onrender.com
-/api/users/sync-profile', {}, {
+    await axios.post('https://vetmeet-admin-dashboard-api.onrender.com/api/users/sync-profile', {}, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
