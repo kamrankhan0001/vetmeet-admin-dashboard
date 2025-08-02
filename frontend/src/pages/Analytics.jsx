@@ -35,7 +35,8 @@ const Analytics = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const API_BASE_URL = 'http://localhost:5000/api/admin'; // Your backend admin API base URL
+  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com
+/api/admin'; // Your backend admin API base URL
 
   // Mock Data (replace with actual API calls in useEffect)
   const mockAnalyticsData = {
