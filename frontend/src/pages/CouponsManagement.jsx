@@ -11,8 +11,7 @@ const CouponsManagement = () => {
   const [editingCoupon, setEditingCoupon] = useState(null); // Null for add, object for edit
   const [deletingId, setDeletingId] = useState(null);
 
-  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin'; // Your backend admin API base URL
+  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com/api/admin'; // Your backend admin API base URL
 
   // Function to fetch coupons from the backend
   const fetchCoupons = async () => {
