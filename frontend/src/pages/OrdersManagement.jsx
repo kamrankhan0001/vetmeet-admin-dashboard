@@ -13,8 +13,7 @@ const OrdersManagement = () => {
       setLoading(true);
       try {
         const token = localStorage.getItem('adminIdToken');
-        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin/orders', {
+        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com/api/admin/orders', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setOrders(res.data);
@@ -32,8 +31,7 @@ const OrdersManagement = () => {
     try {
       const token = localStorage.getItem('adminIdToken');
       await axios.put(
-        `https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin/orders/${orderId}/status`,
+        `https://vetmeet-admin-dashboard-api.onrender.com/api/admin/orders/${orderId}/status`,
         { status: nextStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
