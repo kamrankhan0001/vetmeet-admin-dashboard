@@ -11,8 +11,7 @@ const ReviewsManagement = () => {
   const [filterStatus, setFilterStatus] = useState('all'); // 'all', 'pending', 'approved', 'rejected'
   const [searchTerm, setSearchTerm] = useState(''); // For searching comments/users
 
-  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin'; // Your backend admin API base URL
+  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com/api/admin'; // Your backend admin API base URL
 
   // Function to fetch reviews from the backend
   const fetchReviews = async () => {
