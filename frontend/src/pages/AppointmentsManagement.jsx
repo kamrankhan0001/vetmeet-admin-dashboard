@@ -9,8 +9,7 @@ const AppointmentManagement = () => {
   const [error, setError] = useState('');
   const [updatingId, setUpdatingId] = useState(null); // To show loading state for individual row updates
 
-  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin'; // Your backend admin API base URL
+  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com/api/admin'; // Your backend admin API base URL
 
   // Function to fetch appointments from the backend
   const fetchAppointments = async () => {
