@@ -22,8 +22,7 @@ const DashboardHome = () => {
     const fetchStats = async () => {
       try {
         const token = localStorage.getItem('adminIdToken');
-        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin/stats', {
+        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com/api/admin/stats', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setStats(res.data);
@@ -37,8 +36,7 @@ const DashboardHome = () => {
     const fetchRecentOrders = async () => {
       try {
         const token = localStorage.getItem('adminIdToken');
-        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com
-/api/admin/recent-orders', {
+        const res = await axios.get('https://vetmeet-admin-dashboard-api.onrender.com/api/admin/recent-orders', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setRecentOrders(res.data);
