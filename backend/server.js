@@ -20,7 +20,7 @@ connectDB();
 // Middleware
 // Enable CORS for all origins during development. Restrict in production.
 app.use(cors({
-  origin: ['http://localhost:5173'],  
+  origin: ['https://vetmeet-admin-dashboard-ui.vercel.app/admin/login'],  
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
