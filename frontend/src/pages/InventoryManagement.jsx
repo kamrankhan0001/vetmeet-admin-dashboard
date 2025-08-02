@@ -12,7 +12,8 @@ const InventoryManagement = () => {
   const [editingProduct, setEditingProduct] = useState(null); // Null for add, object for edit
   const [deletingId, setDeletingId] = useState(null);
 
-  const API_BASE_URL = 'http://localhost:5000/api/admin'; // Your backend admin API base URL
+  const API_BASE_URL = 'https://vetmeet-admin-dashboard-api.onrender.com
+/api/admin'; // Your backend admin API base URL
   const LOW_STOCK_THRESHOLD = 10; // Define your low stock threshold
 
   // Function to fetch products from the backend
